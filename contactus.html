@@ -1,0 +1,328 @@
+<!--doctype html-->
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+<title>Contact Us</title>
+    <link rel="stylesheet" type="text/css" href="css/index_style.css">
+<link rel="icon" type="image/ico" href="image/logo.ico">
+<!--using-fontAwesome------------>
+<script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+
+<style>
+
+    @charset "utf-8";
+    /* CSS Document */
+    body{
+    	margin:0px;
+    	padding: 0px;
+    	background-color: #FFF;
+    }
+    a{
+    	text-decoration:none;
+    }
+    .a-social a{
+    	padding: 20px;
+    	color:#7b7c7c;
+    	font-size:1.1rem;
+    }
+    #contact{
+    	position: absolute;
+    	left: 50%;
+    	top: 50%;
+    	transform: translate(-50%,-50%);
+    	display: flex;
+    	align-items: center;
+    }
+    .a-social{
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	background-color: #FFFFFF;
+    	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    }
+    .a-social a:hover{
+    	color:#000000;
+    	transition: all ease 0.3s;
+    }
+    .contact-box{
+    	background-color:#434445;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    	padding: 30px 30px;
+    	box-shadow: 2px 0px 30px rgba(0,0,0,0.1);
+    }
+    .c-heading h1{
+    	font-family: Roboto;
+    	color: #e7eef3;
+    	font-size: 2.5rem;
+    	font-weight: lighter;
+    	margin: 0px;
+    	padding: 0px;
+    }
+    .c-heading p{
+    	font-family: Roboto;
+    	color:#cecece;
+    	font-size: 0.8rem;
+    	font-weight: lighter;
+    	margin: 0px;
+    	padding: 0px;
+    	text-align: center;
+    }
+    .c-inputs{
+    	margin: 15px 0px;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+    }
+    .c-inputs input{
+    	width:250px;
+    	height: 45px;
+    	background-color: transparent;
+    	border: none;
+    	border-bottom: 1px solid rgba(251,251,251,0.1);
+    	outline: none;
+    	margin: 10px 0px;
+    	padding: 10px;
+    	box-sizing: border-box;
+    	color: #f4f4f4;
+    	display: flex;
+    }
+    .c-inputs textarea{
+    	width:250px !important;
+    	height: 200px !important;
+    	outline: none;
+    	background-color: transparent;
+    	border:1px solid rgba(82,82,82,1);
+    	color: #f4f4f4;
+    	padding: 10px;
+    	font-size: 1.2rem;
+    	box-sizing: border-box;
+    }
+    .c-inputs button{
+    	width:200px;
+    	height: 40px;
+    	background-color: #FFFFFF;
+    	border: none;
+    	outline: none;
+    	margin: 20px 0 0 25px;
+    	border-radius: 10px;
+    	box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
+    	letter-spacing: 1px;
+    }
+    .c-inputs input:focus{
+    	border-bottom: 1px solid rgba(252,252,252,1.00);
+    	transition: all ease 0.5s;
+    }
+    .c-inputs textarea:focus{
+    	border: none;
+    	border-bottom: 1px solid rgba(255,255,255,1.00);
+    	transition: all ease 0.5s;
+    	background-color: rgba(0,0,0,0.1);
+    }
+    .c-inputs button:active{
+    	transform: scale(1.02);
+    }
+    .map{
+    	filter: grayscale(0.2);
+    	box-shadow: 2px 2px 30px rgba(0,0,0,0.2);
+    	border: 2px solid #FFFFFF;
+    }
+    @media(max-width:1100px){
+    	.map{
+    		display: none;
+    	}
+    }
+    @media(max-width:450px){
+    	.a-social{
+    		display: none;
+    	}
+    	.contact-box{
+    		width: 100%;
+    		height: 100vh;
+    		box-sizing: border-box;
+    	}
+    	#contact{
+    		position: static;
+    		transform: translate(0,0);
+    		width:100%;
+    		height: 100vh;
+    		box-sizing: border-box;
+    	}
+    	.c-heading h1{
+    		font-size: 2.2rem;
+    		text-align: center;
+    	}
+    }
+</style>
+</head>
+<body>
+    <div id="progressbar"></div>
+    <div id="scrollpath"></div>
+    <section class="b-section1">
+        <header class="b-header">
+            <a href="index.html" class="b-logo">Winkel</a>
+            <ul class="b-nav">
+                <li class="b-li d-none d-lg-block"><a class="b-menu" href="index.html"><span>Home</span></a></li>
+                <li class="b-li d-none d-lg-block"><a class="b-menu" href="aboutus.html"><span>About</span></a></li>
+                <li class="b-li d-none d-lg-block"><a class="b-menu" href="contactus.html"><span class="active">Contact Us</span></a></li>
+                <li class="b-li d-none d-lg-block"><a class="b-menu" style="margin-right: 0;" href="faq.html"><span>FAQ</span></a></li>
+                <li class="d-block d-lg-none"><img src="image/menu.png" class="b-menu-img" onclick="openNav()"></li>
+            </ul>
+            <div id="myNav" class="overlay d-block d-lg-none">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html"><span>Home</span></a>
+                    <a href="aboutus.html"><span>About</span></a>
+                    <a href="contactus.html"><span class="active">Contact US</span></a>
+                    <a href="faq.html"><span>FAQ</span></a>
+                </div>
+            </div>
+        </header>
+    </section>
+<!--contact-form-container------------------->
+	<section id="contact">
+	<!--socail----------->
+	<div class="a-social">
+	<!--icons--------->
+	<a href="#"><i class="fab fa-facebook-f"></i></a>
+	<a href="#"><i class="fab fa-twitter"></i></a>
+	<a href="#"><i class="fab fa-instagram"></i></a>
+	<a href="#"><i class="fab fa-dribbble"></i></a>
+	<a href="#"><i class="fab fa-behance"></i></a>
+		
+	</div>
+	<!--contact-box------------->
+	<div class="contact-box">
+	<!--heading---------->
+	<div class="c-heading">
+	<h1>Get In Touch</h1>
+	<p>Call Or Email Us Regarding Question Or Issues</p>
+	</div>
+	<!--inputs------------------>
+	<div class="c-inputs">
+	<form action="index.html" method="POST">
+	<input type="text" placeholder="Full Name"/>	
+	<input type="email" placeholder="Example@gmail.com"/>
+	<textarea name="message" placeholder="Write Message"></textarea>
+	<!--sumbit-btn----------->
+	<button>SEND</button>
+	</form>
+	</div>
+		
+	</div>
+	<!--map------------------->
+	<div class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14734.386346254456!2d88.39610338340916!3d22.594186682988983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0275e3f06c8fc9%3A0x2ab99eaa683c8723!2sTechtree%20Technologies!5e0!3m2!1sen!2sin!4v1605582007156!5m2!1sen!2sin" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+	</div>
+	</section>
+    <!-- 5th section -->
+    <section class="b-section5" style=" background: #fff;">
+        <div class="row">
+            <div class="col-md-6 b-subs-text" style="align-items: center;justify-content: center;display: flex;flex-direction: column;">
+                <h4>SUBSCRIBE TO OUR NEWSLETTERS</h4>
+                <p>A short sentence describing what someone will receive by subscribing.</p>
+            </div>
+            <div class="col-md-6 b-subs-text" style="align-items: center;justify-content: center;display: flex;">
+                <form method="POST" style="align-items: center;display: flex;justify-content: center;">
+                    <input type="email" name="email" placeholder="Enter your email address" style="background: #efefef;"><input type="submit" name="submit" value="SUBSCRIBE">
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- end of 5th section -->
+    <!-- 6th section -->
+    <section class="b-section6">
+        <div class="row">
+            <div class="col-md-3 footer-text">
+                <h4>EXTRAS</h4>
+                <p>Brands</p>
+                <p>Gift Certificates</p>
+                <p>Affiliate</p>
+                <p>Site Map</p>
+            </div>
+            <div class="col-md-3 footer-text">
+                <h4>INFORMATION</h4>
+                <p>About Us</p>
+                <p>Privacy Policy</p>
+                <p>Site Map</p>
+                <p>Specials</p>
+            </div>
+            <div class="col-md-3 footer-text">
+                <h4>MY ACCOUNT</h4>
+                <p>My Account</p>
+                <p>Order History</p>
+                <p>Wish List</p>
+                <p>Returns</p>
+            </div>
+            <div class="col-md-3 footer-text">
+                <h4>CONTACT US</h4>
+                <p>Newsletter</p>
+                <p>company@gmail.com</p>
+                <p>456-456-4512</p>
+                <p>CITY OF JOY, INDIA</p>
+            </div>
+        </div>
+        <div class="b-section6-menu">
+            <a href="aboutus.html"><span>About Us</span></a>
+            <a href="#" data-toggle="modal" data-target="#staticBackdrop"><span>Terms and Conditions.</span></a>
+            <a href="faq.html"><span>FAQ</span></a>
+        </div>
+        <ul class="b-social-footer">
+            <li><a href="https://www.facebook.com/winkel" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="https://twitter.com/winkel" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://instagram.com/winkel" target="_blank"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </section>
+    <!-- and of 6th section -->
+    <!-- terms & condition Modal -->
+    <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true" style="background: rgba(0,0,0,0.7);">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content" style="background: transparent;color: #fff;border: none;">
+            <div class="modal-header" style="border: none;">
+                <h5 class="modal-title" id="staticBackdropLabel" style="font-size: 35px;margin-left: 35px;color: white;">Terms and Conditions.</h5>
+            </div>
+            <div class="modal-body">
+                We, hereby declare the terms and conditions for our WINKEL Phone shop, which should be strictly followed by the user for accessing the website. <br><br>
+                Conditions are as follows:- <br><br>
+                &nbsp;<img src="image/phone.png" width="24px">&nbsp;&nbsp;Website uses Cookies. <br>
+                &nbsp;<img src="image/phone.png" width="24px">&nbsp;&nbsp;Can be accessed only on PCs, desktop, laptops etc. <br>
+                &nbsp;<img src="image/phone.png" width="24px">&nbsp;&nbsp;User can access the website after the login process. <br>
+                &nbsp;<img src="image/phone.png" width="24px">&nbsp;&nbsp;No copyright of password. <br>
+                &nbsp;<img src="image/phone.png" width="24px">&nbsp;&nbsp;Password created should be containing both alphabet and numbers. <br>
+                &nbsp;<img src="image/phone.png" width="24px">&nbsp;&nbsp;One time login and unlimited access. <br><br>
+                For any further query you can use the contact us page to contact us, given on Dashboard.
+            </div>
+            <div class="modal-footer" style="border: none;align-items: center;justify-content: center;display: flex;flex-direction: row;">
+                <button type="button" class="btn btn-outline-success" data-dismiss="modal" style="border: 3px solid #28a745;font-weight: 700;"><i class="fas fa-check"></i>&nbsp;&nbsp;Agree</button>
+                <button type="button" class="btn btn-outline-danger" style="border: 3px solid #dc3545;font-weight: 700;"><span style="font-size: 19px;">&times;</span>&nbsp;&nbsp;Disagree</button>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- end of terms & condition modal -->
+    <!-- 7th section -->
+    <section class="b-section7">
+        <div class="b-section7-text">
+            <p>Copyright &copy; 2020 All Right Reserved. Designed By &nbsp;Winkel.</p>
+        </div>
+    </section>
+    <!-- end of 7th section -->
+    <!-- Script starts here -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!--bootstrap js cdn-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- index starts here -->
+    <script type="text/javascript" src="js/index_js.js"></script>
+</body>
+</html>
